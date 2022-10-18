@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Tutorial</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="/style/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="/app.js"></script>
+    <script src="https://kit.fontawesome.com/ac8f0ed9b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav style="position: fixed; margin-bottom: 3%; width: 100%;" class=" navBar navbar navbar-expand-md">
+      <a style="margin-left: 1.5%;" href="#" class="nav-link align-middle px-0">
+        <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right:30px ;">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <div class="navItem">
+            <a class="nav-link" href="#VMSPHERE">VM-Sphere</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div class="navItem">
+            <a class="nav-link" href="#NETTVERK">Nettverk og instillinger</a>
+          </div>
+        </li>
+        <li class="nav-item"> 
+          <div class="navItem">
+            <a class="nav-link" href="#UBUNTU">Ubuntu Enhet</a>
+          </div>
+        </li>
+        </ul>
+      </div>
+    </nav>
+
+  <layer id="layer2">
+    <div style="padding-top: 68px;" class="container-fluid">
+      <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+          <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+              <li class="nav-item">
+              </li>
+              <li>
+                <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                  <li><a href="#steg5" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 1 </a></li>
+                  <li><a href="#steg2" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 2 </a></li>
+                  <li><a href="#steg3" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 3 </a></li>
+                  <li><a href="#steg4" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 4 </a></li>
+                  <li><a href="#steg5" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 5 </a></li>
+                  <li><a href="#steg6" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 6 </a></li>
+                  <li><a href="#steg7" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 7 </a></li>
+                  <li><a href="#steg8" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 8 </a></li>
+                  <li><a href="#steg9" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 9 </a></li>
+                  <li><a href="#steg10" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 10 </a></li>
+                  <li><a href="#steg11" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 11 </a></li>
+                  <li><a href="#steg12" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 12 </a></li>
+                  <li><a href="#steg13" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 13 </a></li>
+                  <li><a href="#steg14" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 14 </a></li>
+                  <li><a href="#steg15" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 15 </a></li>
+                  <li><a href="#steg16" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 16 </a></li>
+                  <li><a href="#steg17" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 17 </a></li>
+                  <li><a href="#steg18" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 18 </a></li>
+                  <li><a href="#steg19" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 19 </a></li>
+                  <li><a href="#steg20" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 20 </a></li>
+                  <li><a href="#steg21" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 21 </a></li>
+                  <li><a href="#steg22" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 22 </a></li>
+                  <li><a href="#steg23" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 23 </a></li>
+                  <li><a href="#steg24" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 24 </a></li>
+                  <li><a href="#steg25" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 25 </a></li>
+                  <li><a href="#steg26" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 26 </a></li>
+                  <li><a href="#steg27" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 27 </a></li>
+                  <li><a href="#steg28" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 28 </a></li>
+                  <li><a href="#steg29" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 29 </a></li>
+                  <li><a href="#steg30" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 30 </a></li>
+                  <li><a href="#steg31" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 31 </a></li>
+                  <li><a href="#steg32" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 32 </a></li>
+                  <li><a href="#steg33" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 33 </a></li>
+                  <li><a href="#steg34" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 34 </a></li>
+                  <li><a href="#steg35" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 35 </a></li>
+                  <li><a href="#steg36" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 36 </a></li>
+                  <li><a href="#steg37" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 37 </a></li>
+                  <li><a href="#steg38" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 38 </a></li>
+                  <li><a href="#steg39" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 39 </a></li>
+                  <li><a href="#steg40" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 40 </a></li>
+                  <li><a href="#steg41" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 41 </a></li>
+                  <li><a href="#steg42" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 42 </a></li>
+                  <li><a href="#steg43" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 43 </a></li>
+                  <li><a href="#steg44" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 44 </a></li>
+                  <li><a href="#steg45" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 45 </a></li>
+                  <li><a href="#steg46" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 46 </a></li>
+                  <li><a href="#steg47" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 47 </a></li>
+                  <li><a href="#steg48" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 48 </a></li>
+                  <li><a href="#steg49" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 49 </a></li>
+                  <li><a href="#steg50" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 50 </a></li>
+                  <li><a href="#steg51" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 51 </a></li>
+                  <li><a href="#steg52" class="nav-link px-0"> <span class="d-none d-sm-inline">Del</span> 52 </a></li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <div style="margin: 0%;" class="col py-3">
+        <div class="MP">
+          <h1>
+              Ubuntu Tutorial
+          </h1>
+  
+          <h3>
+              En guide til Ubuntu hoasting
+          </h3>
+          <br><br>
+          <h5>
+              På denne siden skal du lære om hvordan man starter og hoaster en server på en Ubuntu PC. <br>
+              I på denne siden kommer vi også til å gå over noen steg om du skulle bruke ViritualMachine sphere <br>
+              Denne leksjonen kommer til å være det opp i steg fra 1 til ... Pass på at alle deler av hvert steg er <br>
+              fullført før du begynner på neste steg. (Noen steg vil ha A, B, C deler osv. Følg disse i rekkefølge og ferdig <br>
+              før du fortsetter).
+          </h5>
+          <br><br>
+  
+          <h2 id="steg1 VMSPHERE">Steg 1</h2>
+          <img class="MPimg" src="/Img/1.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+            Dette steget farm til steg Nr... Er for de som skal sette opp en slik server på ViritualMachine sphere
+            (Om du ikke skal bruke dette behøver du ikke gå over disse stegene <br><br><br>
+          </h7>
+          </div>
+          <h5 class="MPET">
+            Her skal du kun gi et navn til serveren du skal bruke innenfor VM sphere. Dette bør helst ha med hvilke opprativsystem du skal bruke sammen med et nummer eller navn så du kan kjenne igen de forskjellige forsøkene(Dette kommer til å bli veldig brukbart etter et par runder med VM sphere).  
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg2">Steg 2</h2>
+          <img class="MPimg" src="/Img/2.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          <br><br><br>
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg3">Steg 3</h2>
+          <img class="MPimg" src="/Img/3.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+            Når du får valget mellom Windows, Linux eller Other velger du Linux deretter velger du Ubuntu Linux (64-Bit) for å få riktig setup for din VM Maskin.
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg4">Steg 4</h2>
+          <img class="MPimg" src="/Img/4.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+            Når du kommer til Viritual Hardware skal du sette opp hva maskinen skal ha av tilkoblinger og nettverk. Her følger du instruksjon du har fått ifra lærer eller kontakt om hvilke nettverksinstillinger du skal følge.
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg5">Steg 5</h2>
+          <img class="MPimg" src="/Img/5.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+            Dette steget er spesielt viktig om mange skal logge på og bruke VM serveren samtidig, Når du får valget med New Hard Disk velger du Thin Provisjon. Dette gjør det lettere for serveren å fordele informasjonen du lagrer på VM serveren mellom deg og andre som bruker samme server.
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg6">Steg 6</h2>
+          <img class="MPimg" src="/Img/6.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+            Sørg for å velge nøyaktig riktig i disse stegene. Forklaring er ikke nødvendig, men sørg for at alle instillingene er riktige før du forstetter videre til neste steg.
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg7">Steg 7</h2>
+          <img class="MPimg" src="/Img/7.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+            Her skal du velge hvilket opprativsystem som skal brukes på VM maskinen.
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg8">Steg 8</h2>
+          <img class="MPimg" src="/Img/8.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+            !Viktig! Sørg for at denne boksen er sjekket av.
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg9">Steg 9</h2>
+          <img class="MPimg" src="/Img/9.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg10">Steg 10</h2>
+          <img class="MPimg" src="/Img/10.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+            Sørg for at alle av de tidligere valgene er rettet på. Du kan ikke rette på det etter dette steget.
+          </h7>
+          </div>
+          <h5 class="MPET"><br><br>
+            I dette steget skal vi boote VM Maskinen for å simulere en ny PC som har de samme instillingene og tilkoblingene vi har valgt i tidligere steg.
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg11">Steg 11</h2>
+          <img class="MPimg" src="/Img/11.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg12 NETTVERK">Steg 12</h2>
+          <img class="MPimg" src="/Img/12.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+            Nå er vi inne på den nye simulerte maskinen som vi har laget. Dette er det skjermen viser oss når vi skal laste ned Ubuntu. <br> Velg Boot menyen før du velger Network boot from VMware .....
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg13">Steg 13</h2>
+          <img class="MPimg" src="/Img/13.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+            Nå er PCen kalr for å boote Ubuntu. Gå til Exit menyen, velg save changes (Exit Saving changes(Om du ikke er 100% sikker på at alt er rett gå tilbake nå og dobbelsjekk))
+          </h5><br><br><br>
+  
+          <h2 id="steg14">Steg 14</h2>
+          <img class="MPimg" src="/Img/14.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5>
+
+
+          <h2 id="steg15">Steg 15</h2>
+          <img class="MPimg" src="/Img/15.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          <br><br><br>
+          </h7>
+          </div>
+          <h5 class="MPET">
+            Nå skal vi sette opp internettet på PCen. Husk å bruke IPv4
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg16">Steg 16</h2>
+          <img class="MPimg" src="/Img/16.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+            <br>
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg17">Steg 17</h2>
+          <img class="MPimg" src="/Img/17.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+            I dette steget trenger du informasjon fra lærer eller veileder.
+          </h7>
+          </div>
+          <h5 class="MPET"><br>
+            Her skal du fylle ut informasjonen om internett forbindelsen for å gjøre den kompatibel med PCen din. Sørg for at du får riktig IP på alle boksene.
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg18">Steg 18</h2>
+          <img class="MPimg" src="/Img/18.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+            Velg continue for å fortsette.(Du kan ikke endre på instillingene etterpå)
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg19">Steg 19</h2>
+          <img class="MPimg" src="/Img/19.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+            Her skal du sette opp navn, bruker og passord på enheten. Velg noe som er enkelt eller noe som per lett å huske.
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg20">Steg 20</h2>
+          <img class="MPimg" src="/Img/20.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+            Om "Install OpenSSH server" er valgt kan du trykke continue for å ferdigjøre instillingene på PCen
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg21">Steg 21</h2>
+          <img class="MPimg" src="/Img/21.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+            Dette steget kan ta en stund, når du får mulighet til det velg "Reboot Now".
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg22 UBUNTU">Steg 22</h2>
+          <img class="MPimg" src="/Img/22.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+            Her må du skrive inn passordet som du lagde tidliigere. Om du har glemt passordet må du starte på nytt.
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg23">Steg 23</h2>
+          <img class="MPimg" src="/Img/23.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+            Når alt er klart i konsollen skal du skrive inn "sudo su". Trykk enter så skriv inn passordet til brukeren.
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg24">Steg 24</h2>
+          <img class="MPimg" src="/Img/24.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+            Når alt er klart skriv inn "Sudo apt update" og trykk enter.
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg25">Steg 25</h2>
+          <img class="MPimg" src="/Img/25.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+            Når alt er klart skriv inn "Sudo apt install apashe2" og trykk enter.
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg26">Steg 26</h2>
+          <img class="MPimg" src="/Img/26.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+            Om du har gjort alt riktig vil du få en respons på noe lignende dette.
+          </h5><br><br><br>
+  
+
+          <h2 id="steg27">Steg 27</h2>
+          <img class="MPimg" src="/Img/27.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+            Om du har gjort alt riktig vil du kunne liste alle funksjonene til Apashe ved å skrive "sudo ufw app list".
+          </h5><br><br><br>
+
+
+          <h2 id="steg28">Steg 28</h2>
+          <img class="MPimg" src="/Img/28.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          <br><br><br>
+          </h7>
+          </div>
+          <h5 class="MPET">
+            Skriv inn "sudo ufw allow 'Apashe'"
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg29">Steg 29</h2>
+          <img class="MPimg" src="/Img/29.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+            For å nå se statusen på Apashe instillingen skriv inn "sudo ufw status"
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg30">Steg 30</h2>
+          <img class="MPimg" src="/Img/30.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+            Skriv inn "Sudo systemctl status apashe2"
+          </h5><br><br><br>
+
+          <h2 id="steg31">Steg 31</h2>
+          <img class="MPimg" src="/Img/31.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+            I dette steget og stegene fremmover må du kun følge instruksen vist på bildene over. Om du har noen spørsmål, kontaklt lører eller veileder.
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg32">Steg 32</h2>
+          <img class="MPimg" src="/Img/32.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg33">Steg 33</h2>
+          <img class="MPimg" src="/Img/33.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg34">Steg 34</h2>
+          <img class="MPimg" src="/Img/34.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg35">Steg 35</h2>
+          <img class="MPimg" src="/Img/35.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg36">Steg 36</h2>
+          <img class="MPimg" src="/Img/36.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg37">Steg 37</h2>
+          <img class="MPimg" src="/Img/37.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg38">Steg 38</h2>
+          <img class="MPimg" src="/Img/38.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg39">Steg 39</h2>
+          <img class="MPimg" src="/Img/39.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5><br><br><br>
+  
+          <h2 id="steg40">Steg 40</h2>
+          <img class="MPimg" src="/Img/40.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5>
+
+
+          <h2 id="steg41">Steg 41</h2>
+          <img class="MPimg" src="/Img/41.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg42">Steg 42</h2>
+          <img class="MPimg" src="/Img/42.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg43">Steg 43</h2>
+          <img class="MPimg" src="/Img/43.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg44">Steg 44</h2>
+          <img class="MPimg" src="/Img/44.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg45">Steg 45</h2>
+          <img class="MPimg" src="/Img/45.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg46">Steg 46</h2>
+          <img class="MPimg" src="/Img/46.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg47">Steg 47</h2>
+          <img class="MPimg" src="/Img/47.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg48">Steg 48</h2>
+          <img class="MPimg" src="/Img/48.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg49">Steg 49</h2>
+          <img class="MPimg" src="/Img/49.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5><br><br><br>
+  
+  
+          <h2 id="steg50">Steg 50</h2>
+          <img class="MPimg" src="/Img/50.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5><br><br><br>
+  
+          <h2 id="steg51">Steg 51</h2>
+          <img class="MPimg" src="/Img/51.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5>
+          <h2 id="steg52">Steg 52</h2>
+          <img class="MPimg" src="/Img/52.png" alt=""> <br> <br> <br>
+          <div class="MPimgB">
+          <h7 class="MPimgBT">
+          </h7>
+          </div>
+          <h5 class="MPET">
+          </h5>
+        </div>
+      </div>
+    </div>
+    </div>
+  </layer>
+
+</body>

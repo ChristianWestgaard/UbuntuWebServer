@@ -1,0 +1,35 @@
+.MP{
+    padding: 5%;
+}
+h1{
+
+}
+
+.navBar{
+    background-color: rgb(26, 74, 116);
+    color: rgb(170, 170, 170);
+}
+
+.nav li{
+    display: inline-block;
+}
+
+.navHome{
+    margin-left: 1%;
+}
+
+.MPimg{
+    width: 75%;
+}
+
+.MPimgB{
+    width: 65%;
+}
+
+.MPimgBT{
+    color: rgb(78, 77, 77);
+}
+
+.navItem{
+    margin-right: 35px;
+}
